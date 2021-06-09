@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConnectionController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <AnchorPane VBox.vgrow="ALWAYS">
+               <children>
+                      <HBox prefHeight="347.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="268.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <children>
+                                            <Label text="Connections" />
+                                            <ListView fx:id="theConnectionList" VBox.vgrow="ALWAYS" />
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        </padding>
+                                    </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="35.0" />
+                           </HBox.margin>
+                           <children>
+                                    <VBox prefHeight="302.0" prefWidth="523.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <children>
+                                            <AnchorPane VBox.vgrow="ALWAYS">
+                                               <children>
+                                                  <HBox prefHeight="40.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                     <children>
+                                                        <Label minHeight="40.0" text="Connection Name : " />
+                                                                <TextField fx:id="theConnectionName" minHeight="40.0" promptText="Connection Name" HBox.hgrow="ALWAYS" />
+                                                     </children>
+                                                  </HBox>
+                                               </children>
+                                            </AnchorPane>
+                                            <AnchorPane VBox.vgrow="ALWAYS">
+                                               <children>
+                                                  <HBox prefHeight="41.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                     <children>
+                                                        <Label minHeight="40.0" text="User Name :            " />
+                                                                <TextField fx:id="theUserName" minHeight="40.0" promptText="User Name" HBox.hgrow="ALWAYS" />
+                                                     </children>
+                                                  </HBox>
+                                               </children>
+                                            </AnchorPane>
+                                            <AnchorPane VBox.vgrow="ALWAYS">
+                                               <children>
+                                                  <HBox prefHeight="40.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                     <children>
+                                                        <Label minHeight="40.0" text="Password :               " />
+                                                                <PasswordField fx:id="theUserPassword" minHeight="40.0" promptText="Password" HBox.hgrow="ALWAYS" />
+                                                     </children>
+                                                  </HBox>
+                                               </children>
+                                            </AnchorPane>
+                                            <AnchorPane VBox.vgrow="ALWAYS">
+                                               <children>
+                                                  <HBox prefHeight="40.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                     <children>
+                                                        <Label minHeight="40.0" text="Endpoint URL :        " />
+                                                                <TextField fx:id="theServiceUrl" minHeight="40.0" promptText="Url" HBox.hgrow="ALWAYS" />
+                                                     </children>
+                                                  </HBox>
+                                               </children>
+                                            </AnchorPane>
+                                            <AnchorPane VBox.vgrow="ALWAYS">
+                                               <children>
+                                                  <HBox prefHeight="25.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                     <children>
+                                                        <Label minHeight="40.0" text="Service Action :       " />
+                                                                <TextField fx:id="theServiceOperation" minHeight="40.0" promptText="Action" HBox.hgrow="ALWAYS" />
+                                                     </children>
+                                                  </HBox>
+                                               </children>
+                                            </AnchorPane>
+                                        </children>
+                                    </VBox>
+                           </children>
+                        </AnchorPane>
+                          </children>
+                      </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane VBox.vgrow="ALWAYS" />
+            <AnchorPane VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="560.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <children>
+                                    <Button fx:id="theBtNew" minWidth="120.0" mnemonicParsing="false" onAction="#onNewConnection" text="New" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <children>
+                                    <Button fx:id="theBtSave" minWidth="120.0" mnemonicParsing="false" onAction="#onSaveConnection" text="Save" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <children>
+                                    <Button fx:id="theBtDelete" minWidth="120.0" mnemonicParsing="false" onAction="#onDeleteConnection" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane HBox.hgrow="ALWAYS">
+                           <children>
+                                    <Button fx:id="theBtTest" minWidth="120.0" mnemonicParsing="false" onAction="#onTestConnection" text="Test Connection" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

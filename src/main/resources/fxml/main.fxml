@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0">
+            <buttons>
+                <Button fx:id="theBtConnections" mnemonicParsing="false" onAction="#onConnections" text="Connections" ButtonBar.buttonData="LEFT" />
+                <Button fx:id="theBtNewWindow" mnemonicParsing="false" onAction="#onNewWindow" text="New Window" ButtonBar.buttonData="LEFT" />
+                <Button fx:id="theBtSave" mnemonicParsing="false" onAction="#onSave" text="Save" ButtonBar.buttonData="LEFT" />
+                <Button fx:id="theBtExecuteAll" mnemonicParsing="false" onAction="#onExecuteAll" text="Execute All" ButtonBar.buttonData="LEFT" />
+                <Pane HBox.hgrow="ALWAYS" />
+            </buttons>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </ButtonBar>
+        <HBox>
+            <TabPane fx:id="theTabPane" tabClosingPolicy="SELECTED_TAB" HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </children>
+</VBox>
