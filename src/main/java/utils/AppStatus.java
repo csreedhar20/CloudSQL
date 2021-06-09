@@ -211,7 +211,7 @@ public class AppStatus {
             tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
             // send DOM to file
-            String curPath = System.getProperty("user.dir") + theFilePath;
+            String curPath = System.getProperty("user.dir") +"/" + theFilePath;
 
             tr.transform(new DOMSource(dom),
                     new StreamResult(new FileOutputStream(curPath)));

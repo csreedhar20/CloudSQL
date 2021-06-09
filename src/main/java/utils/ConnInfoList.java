@@ -264,7 +264,7 @@ public class ConnInfoList extends ArrayList<ConnInfo> {
             tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
             // send DOM to file
-            String curPath = System.getProperty("user.dir") + theSettingPath;
+            String curPath = System.getProperty("user.dir") +"/" + theSettingPath;
 
             tr.transform(new DOMSource(dom),
                     new StreamResult(new FileOutputStream(curPath)));
